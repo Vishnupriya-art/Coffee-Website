@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Coffee House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">
+            <i class="fas fa-coffee"></i>
+            <span>Coffee</span>
+        </a>
+        
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <button class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <section class="hero">
+        <div class="coffee-beans" id="coffee-beans"></div>
+        <div class="hero-content">
+            <h3 class="hero-title">Best Coffee</h3>
+            <h1 class="hero-subtitle">Make your day great with our special coffee!</h1>
+            <p class="hero-description">Welcome to our coffee paradise, where every bean 
+                tells a story and every cup sparks joy.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Order Now</a>
+                <a href="#" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://res.cloudinary.com/dvknx0hpm/image/upload/v1747471935/Screenshot_2025-05-17_142108-removebg-preview_mi6sk0.png" 
+            alt="Coffee cup with splash and coffee beans">
+        </div>
+    </section>
+
+    <script>
+       
+    </script>
+
+    <!--About Section-->
+
+    <!-- About Section -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">About Us</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">Our story and passion for coffee</p>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Crafting Perfect Coffee Since 2010</h3>
+                <p>At our coffee shop, we believe that great coffee is an art form. Our journey began over a decade ago with a simple mission: to serve the finest coffee in a warm, welcoming environment.</p>
+                <p>We source our beans directly from sustainable farms around the world, ensuring that each cup not only tastes exceptional but also supports ethical farming practices.</p>
+                <p>Our master baristas are trained in the delicate art of coffee preparation, from the perfect espresso extraction to latte art that's as beautiful as it is delicious.</p>
+                
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-coffee"></i>
+                        <h4>Premium Beans</h4>
+                        <p>Ethically sourced from around the world</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-award"></i>
+                        <h4>Expert Baristas</h4>
+                        <p>Trained in the art of coffee preparation</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <h4>Made with Love</h4>
+                        <p>Every cup crafted with passion</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-images">
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Coffee beans being roasted">
+                    </div>
+                    <div class="image-item">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Barista preparing coffee">
+                    </div>
+                    <div class="image-item">
+                        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Coffee shop interior">
+                    </div>
+                    <div class="image-item">
+                        <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Latte art">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+
+</style>
+
+<!--Menu Section-->
+
+<!-- Menu Section -->
+<section class="menu" id="menu">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">Discover our handcrafted coffee selection</p>
+        </div>
+
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="hot">Hot Coffee</button>
+            <button class="category-btn" data-category="cold">Cold Coffee</button>
+            <button class="category-btn" data-category="special">Specials</button>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Item 1: Classic Espresso -->
+            <div class="menu-item" data-category="hot">
+                <div class="item-image">
+                    <svg viewBox="0 0 100 100" class="coffee-icon">
+                        <path d="M20,50 C20,35 40,35 50,35 C60,35 80,35 80,50" fill="none" stroke="#e49b0f" stroke-width="3"/>
+                        <path d="M25,50 C25,70 75,70 75,50" fill="#6f4e37"/>
+                        <ellipse cx="50" cy="50" rx="25" ry="5" fill="#3c2312"/>
+                    </svg>
+                </div>
+                <div class="item-content">
+                    <h3>Classic Espresso</h3>
+                    <p>Pure and intense single shot of premium espresso</p>
+                    <div class="item-footer">
+                        <span class="price">$3.99</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: Caramel Macchiato -->
+            <div class="menu-item" data-category="hot">
+                <div class="item-image">
+                    <svg viewBox="0 0 100 100" class="coffee-icon">
+                        <path d="M30,40 L70,40 L65,80 L35,80 Z" fill="#d4a068"/>
+                        <path d="M35,45 L65,45 L62,75 L38,75 Z" fill="#6f4e37"/>
+                        <path d="M40,35 C40,25 60,25 60,35" fill="none" stroke="#e49b0f" stroke-width="3"/>
+                        <circle cx="50" cy="50" r="8" fill="#e49b0f"/>
+                    </svg>
+                </div>
+                <div class="item-content">
+                    <h3>Caramel Macchiato</h3>
+                    <p>Espresso with steamed milk and vanilla, topped with caramel</p>
+                    <div class="item-footer">
+                        <span class="price">$4.99</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: Iced Americano -->
+            <div class="menu-item" data-category="cold">
+                <div class="item-image">
+                    <svg viewBox="0 0 100 100" class="coffee-icon">
+                        <path d="M35,30 L65,30 L60,85 L40,85 Z" fill="#d4a068"/>
+                        <path d="M38,35 L62,35 L58,80 L42,80 Z" fill="#6f4e37"/>
+                        <rect x="45" y="40" width="10" height="10" fill="#fff" opacity="0.8"/>
+                        <rect x="43" y="55" width="14" height="3" fill="#fff" opacity="0.6"/>
+                    </svg>
+                </div>
+                <div class="item-content">
+                    <h3>Iced Americano</h3>
+                    <p>Chilled espresso with cold water and ice cubes</p>
+                    <div class="item-footer">
+                        <span class="price">$4.49</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: Mocha Frappuccino -->
+            <div class="menu-item" data-category="cold">
+                <div class="item-image">
+                    <svg viewBox="0 0 100 100" class="coffee-icon">
+                        <path d="M35,30 L65,30 L60,85 L40,85 Z" fill="#d4a068"/>
+                        <path d="M38,35 L62,35 L58,80 L42,80 Z" fill="#3c2312"/>
+                        <path d="M40,25 C40,15 60,15 60,25" fill="#fff"/>
+                        <circle cx="50" cy="45" r="12" fill="#fff" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="item-content">
+                    <h3>Mocha Frappuccino</h3>
+                    <p>Blended coffee with chocolate, milk, and whipped cream</p>
+                    <div class="item-footer">
+                        <span class="price">$5.99</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5: Cappuccino -->
+            <div class="menu-item" data-category="hot">
+                <div class="item-image">
+                    <svg viewBox="0 0 100 100" class="coffee-icon">
+                        <path d="M30,45 C30,35 70,35 70,45" fill="#d4a068"/>
+                        <path d="M35,45 C35,65 65,65 65,45" fill="#6f4e37"/>
+                        <ellipse cx="50" cy="45" rx="20" ry="5" fill="#fff"/>
+                        <path d="M45,40 Q50,35 55,40" fill="none" stroke="#fff" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="item-content">
+                    <h3>Cappuccino</h3>
+                    <p>Equal parts espresso, steamed milk, and milk foam</p>
+                    <div class="item-footer">
+                        <span class="price">$4.49</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6: Vanilla Latte -->
+            <div class="menu-item" data-category="hot">
+                <div class="item-image">
+                    <svg viewBox="0 0 100 100" class="coffee-icon">
+                        <path d="M30,40 L70,40 L65,80 L35,80 Z" fill="#d4a068"/>
+                        <path d="M35,45 L65,45 L62,75 L38,75 Z" fill="#6f4e37"/>
+                        <path d="M40,35 Q50,25 60,35" fill="none" stroke="#fff" stroke-width="3"/>
+                        <path d="M45,50 Q50,45 55,50" fill="none" stroke="#fff" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="item-content">
+                    <h3>Vanilla Latte</h3>
+                    <p>Espresso with steamed milk and vanilla syrup</p>
+                    <div class="item-footer">
+                        <span class="price">$4.79</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 7: Hazelnut Special -->
+            <div class="menu-item" data-category="special">
+                <div class="item-image">
+                    <svg viewBox="0 0 100 100" class="coffee-icon">
+                        <path d="M30,40 L70,40 L65,80 L35,80 Z" fill="#d4a068"/>
+                        <path d="M35,45 L65,45 L62,75 L38,75 Z" fill="#6f4e37"/>
+                        <circle cx="50" cy="55" r="8" fill="#e49b0f"/>
+                        <path d="M45,35 L55,35 L50,45 Z" fill="#3c2312"/>
+                    </svg>
+                </div>
+                <div class="item-content">
+                    <h3>Hazelnut Special</h3>
+                    <p>Our signature blend with hazelnut and caramel</p>
+                    <div class="item-footer">
+                        <span class="price">$5.49</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 8: Cold Brew -->
+            <div class="menu-item" data-category="cold">
+                <div class="item-image">
+                    <svg viewBox="0 0 100 100" class="coffee-icon">
+                        <path d="M35,30 L65,30 L60,85 L40,85 Z" fill="#d4a068"/>
+                        <path d="M38,35 L62,35 L58,80 L42,80 Z" fill="#3c2312"/>
+                        <rect x="45" y="45" width="10" height="10" fill="#fff" opacity="0.8"/>
+                        <rect x="43" y="60" width="14" height="3" fill="#fff" opacity="0.6"/>
+                    </svg>
+                </div>
+                <div class="item-content">
+                    <h3>Cold Brew</h3>
+                    <p>Smooth and rich cold-brewed coffee</p>
+                    <div class="item-footer">
+                        <span class="price">$4.99</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 9: Cinnamon Dolce Latte -->
+            <div class="menu-item" data-category="special">
+                <div class="item-image">
+                    <svg viewBox="0 0 100 100" class="coffee-icon">
+                        <path d="M30,40 L70,40 L65,80 L35,80 Z" fill="#d4a068"/>
+                        <path d="M35,45 L65,45 L62,75 L38,75 Z" fill="#6f4e37"/>
+                        <path d="M45,35 Q50,30 55,35" fill="none" stroke="#e49b0f" stroke-width="3"/>
+                        <path d="M40,50 Q50,45 60,50" fill="none" stroke="#e49b0f" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="item-content">
+                    <h3>Cinnamon Dolce Latte</h3>
+                    <p>Espresso with cinnamon syrup and whipped cream</p>
+                    <div class="item-footer">
+                        <span class="price">$5.29</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 10: Affogato -->
+            <div class="menu-item" data-category="special">
+                <div class="item-image">
+                    <svg viewBox="0 0 100 100" class="coffee-icon">
+                        <ellipse cx="50" cy="60" rx="20" ry="10" fill="#fff"/>
+                        <path d="M40,50 C40,40 60,40 60,50" fill="#6f4e37"/>
+                        <circle cx="50" cy="45" r="8" fill="#3c2312"/>
+                    </svg>
+                </div>
+                <div class="item-content">
+                    <h3>Affogato</h3>
+                    <p>Vanilla ice cream topped with hot espresso</p>
+                    <div class="item-footer">
+                        <span class="price">$5.99</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Add these items inside the menu-grid div, after the existing items -->
+
+<!-- Item 11: Pumpkin Spice Latte -->
+<div class="menu-item" data-category="special">
+    <div class="item-image">
+        <svg viewBox="0 0 100 100" class="coffee-icon">
+            <path d="M30,40 L70,40 L65,80 L35,80 Z" fill="#d4a068"/>
+            <path d="M35,45 L65,45 L62,75 L38,75 Z" fill="#6f4e37"/>
+            <path d="M45,35 Q50,30 55,35" stroke="#e49b0f" stroke-width="3" fill="none"/>
+            <circle cx="50" cy="55" r="8" fill="#e49b0f" opacity="0.6"/>
+        </svg>
+    </div>
+    <div class="item-content">
+        <h3>Pumpkin Spice Latte</h3>
+        <p>Seasonal favorite with pumpkin, cinnamon and nutmeg</p>
+        <div class="item-footer">
+            <span class="price">$5.99</span>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Item 12: Matcha Green Tea Latte -->
+<div class="menu-item" data-category="special">
+    <div class="item-image">
+        <svg viewBox="0 0 100 100" class="coffee-icon">
+            <path d="M30,40 L70,40 L65,80 L35,80 Z" fill="#d4a068"/>
+            <path d="M35,45 L65,45 L62,75 L38,75 Z" fill="#4CAF50"/>
+            <circle cx="50" cy="55" r="10" fill="#81C784"/>
+            <path d="M40,35 Q50,30 60,35" stroke="#fff" stroke-width="2" fill="none"/>
+        </svg>
+    </div>
+    <div class="item-content">
+        <h3>Matcha Green Tea Latte</h3>
+        <p>Premium matcha green tea with steamed milk</p>
+        <div class="item-footer">
+            <span class="price">$5.49</span>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Item 13: Salted Caramel Cold Brew -->
+<div class="menu-item" data-category="cold">
+    <div class="item-image">
+        <svg viewBox="0 0 100 100" class="coffee-icon">
+            <path d="M35,30 L65,30 L60,85 L40,85 Z" fill="#d4a068"/>
+            <path d="M38,35 L62,35 L58,80 L42,80 Z" fill="#3c2312"/>
+            <rect x="45" y="45" width="10" height="15" fill="#e49b0f" opacity="0.6"/>
+            <rect x="43" y="65" width="14" height="3" fill="#fff" opacity="0.4"/>
+        </svg>
+    </div>
+    <div class="item-content">
+        <h3>Salted Caramel Cold Brew</h3>
+        <p>Cold brew coffee with salted caramel and cream</p>
+        <div class="item-footer">
+            <span class="price">$5.79</span>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Item 14: Irish Coffee -->
+<div class="menu-item" data-category="special">
+    <div class="item-image">
+        <svg viewBox="0 0 100 100" class="coffee-icon">
+            <path d="M30,40 L70,40 L65,80 L35,80 Z" fill="#d4a068"/>
+            <path d="M35,45 L65,45 L62,75 L38,75 Z" fill="#6f4e37"/>
+            <path d="M40,35 Q50,25 60,35" fill="#fff"/>
+            <rect x="45" y="50" width="10" height="10" fill="#e49b0f" opacity="0.4"/>
+        </svg>
+    </div>
+    <div class="item-content">
+        <h3>Irish Coffee</h3>
+        <p>Hot coffee with Irish whiskey and whipped cream</p>
+        <div class="item-footer">
+            <span class="price">$6.99</span>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Item 15: Coconut Iced Coffee -->
+<div class="menu-item" data-category="cold">
+    <div class="item-image">
+        <svg viewBox="0 0 100 100" class="coffee-icon">
+            <path d="M35,30 L65,30 L60,85 L40,85 Z" fill="#d4a068"/>
+            <path d="M38,35 L62,35 L58,80 L42,80 Z" fill="#3c2312"/>
+            <circle cx="50" cy="50" r="8" fill="#fff" opacity="0.8"/>
+            <path d="M45,65 Q50,60 55,65" stroke="#fff" stroke-width="2" fill="none"/>
+        </svg>
+    </div>
+    <div class="item-content">
+        <h3>Coconut Iced Coffee</h3>
+        <p>Cold brew with coconut milk and vanilla</p>
+        <div class="item-footer">
+            <span class="price">$5.49</span>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+<style>
+
+</style>
+
+<script>
+
+</script>
+
+<!--testimonials section-->
+
+<!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">Real experiences from our coffee lovers</p>
+        </div>
+
+        <div class="testimonials-slider">
+            <div class="testimonials-track">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="profile-image">
+                        <svg viewBox="0 0 100 100" class="avatar-placeholder">
+                            <circle cx="50" cy="35" r="25" fill="#d4a574"/>
+                            <path d="M50,65 C25,65 15,85 15,95 L85,95 C85,85 75,65 50,65" fill="#d4a574"/>
+                        </svg>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <p class="testimonial-text">"The best coffee I've ever had! The atmosphere is cozy and the staff is incredibly friendly. Their signature caramel macchiato is absolutely divine."</p>
+                    <div class="testimonial-author">
+                        <h4>Sarah Johnson</h4>
+                        <p>Regular Customer</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="profile-image">
+                        <svg viewBox="0 0 100 100" class="avatar-placeholder">
+                            <circle cx="50" cy="35" r="25" fill="#d4a574"/>
+                            <path d="M50,65 C25,65 15,85 15,95 L85,95 C85,85 75,65 50,65" fill="#d4a574"/>
+                        </svg>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <p class="testimonial-text">"I love working from this coffee shop. The Wi-Fi is reliable, and their cold brew keeps me going through long work sessions. It's become my second office!"</p>
+                    <div class="testimonial-author">
+                        <h4>Michael Chen</h4>
+                        <p>Freelance Designer</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="profile-image">
+                        <svg viewBox="0 0 100 100" class="avatar-placeholder">
+                            <circle cx="50" cy="35" r="25" fill="#d4a574"/>
+                            <path d="M50,65 C25,65 15,85 15,95 L85,95 C85,85 75,65 50,65" fill="#d4a574"/>
+                        </svg>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <p class="testimonial-text">"Their specialty drinks are amazing! I'm particularly fond of their seasonal offerings. The pumpkin spice latte here is leagues above any chain coffee shop."</p>
+                    <div class="testimonial-author">
+                        <h4>Emily Rodriguez</h4>
+                        <p>Food Blogger</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="profile-image">
+                        <svg viewBox="0 0 100 100" class="avatar-placeholder">
+                            <circle cx="50" cy="35" r="25" fill="#d4a574"/>
+                            <path d="M50,65 C25,65 15,85 15,95 L85,95 C85,85 75,65 50,65" fill="#d4a574"/>
+                        </svg>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <p class="testimonial-text">"The attention to detail in every cup is remarkable. As a coffee enthusiast, I appreciate their commitment to quality and sustainability."</p>
+                    <div class="testimonial-author">
+                        <h4>David Thompson</h4>
+                        <p>Coffee Connoisseur</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-controls">
+                <button class="prev-btn" aria-label="Previous testimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-dots"></div>
+                <button class="next-btn" aria-label="Next testimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+
+</style>
+
+<script>
+
+</script>
+
+<!-- Gallery Section -->
+<section class="gallery" id="gallery">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Gallery</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">Moments captured in our coffee house</p>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item" data-category="interior">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24" alt="Coffee Shop Interior" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Cozy Corner</h3>
+                        <p>Our welcoming interior space</p>
+                        <button class="view-btn" aria-label="View full image">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item" data-category="drinks">
+                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772" alt="Specialty Coffee" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Artisan Coffee</h3>
+                        <p>Handcrafted with care</p>
+                        <button class="view-btn" aria-label="View full image">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item" data-category="barista">
+                <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74" alt="Expert Barista" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Master Craftsmanship</h3>
+                        <p>Our skilled baristas at work</p>
+                        <button class="view-btn" aria-label="View full image">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item" data-category="food">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a" alt="Fresh Pastries" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Fresh Delights</h3>
+                        <p>Daily baked pastries</p>
+                        <button class="view-btn" aria-label="View full image">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="gallery-item" data-category="drinks">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Latte Art" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Latte Art</h3>
+                        <p>Coffee as art form</p>
+                        <button class="view-btn" aria-label="View full image">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="gallery-item" data-category="interior">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24" alt="Outdoor Seating" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Garden View</h3>
+                        <p>Our peaceful patio</p>
+                        <button class="view-btn" aria-label="View full image">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox">
+            <button class="close-lightbox" aria-label="Close lightbox">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+</section>
+
+<style>
+
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('.lightbox-image');
+    const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+    const closeLightbox = lightbox.querySelector('.close-lightbox');
+
+    // Open lightbox
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const img = item.querySelector('img');
+            const caption = item.querySelector('.gallery-info h3').textContent;
+            
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightboxCaption.textContent = caption;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // Close lightbox
+    function closeLightboxHandler() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    closeLightbox.addEventListener('click', closeLightboxHandler);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightboxHandler();
+        }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightboxHandler();
+        }
+    });
+
+    // Lazy loading images
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        document.querySelectorAll('img.lazy').forEach(img => {
+            imageObserver.observe(img);
+        });
+    }
+});
+</script>
+
+
+<!-- Contact Section -->
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">Get in touch with us</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <form id="contactForm" class="contact-form" onsubmit="return sendWhatsApp(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="reservation">Table Reservation</option>
+                            <option value="catering">Catering Service</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Visit Us</h3>
+                        <p>123 Brigade Road<br>Bengaluru, Karnataka 560001<br>India</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Call Us</h3>
+                        <p>+91 98765 43210<br>+91 98765 43211</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>info@coffeehouse.com<br>support@coffeehouse.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="far fa-clock"></i>
+                        <h3>Opening Hours</h3>
+                        <p>Monday - Friday: 7:00 AM - 9:00 PM<br>
+                           Saturday - Sunday: 8:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Maps -->
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9897331546324!2d77.59796907381787!3d12.970536014793698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBrigade%20Road%2C%20Bengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sin!4v1708505847869!5m2!1sen!2sin"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<style>
+
+</style>
+
+<script>
+
+</script>
+
+<!--footer section-->
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+            <h2>Coffee House</h2>
+            <p>Experience the perfect blend of tradition and innovation in every cup.</p>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="footer-hours">
+            <h3>Opening Hours</h3>
+            <ul>
+                <li>
+                    <span>Monday - Friday</span>
+                    <span>7:00 AM - 9:00 PM</span>
+                </li>
+                <li>
+                    <span>Saturday</span>
+                    <span>8:00 AM - 10:00 PM</span>
+                </li>
+                <li>
+                    <span>Sunday</span>
+                    <span>8:00 AM - 8:00 PM</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Coffee Street, Cafe District<br>City, State 12345</span>
+                </li>
+                <li>
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+1 (234) 567-8900</span>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>info@coffeehouse.com</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2024 Coffee House. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+
+
+</style>
+<script src="script.js"></script>
+</body>
+
+</html>

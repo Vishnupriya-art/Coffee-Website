@@ -1,4 +1,5 @@
 ☕ Coffee Website
+
 🌐 Live Demo: : https://vishnupriya-art.github.io/Coffee-Website/ 
 
 📖 About the Project
@@ -13,16 +14,21 @@ Gallery showcasing images of the shop and products
 Contact section with working form fields
 Responsive design for all devices (mobile, tablet, desktop)
 Smooth scrolling and interactive elements
+
+
 🧠 Tech Stack
 Technology	Purpose
 HTML5	Structure of the web pages
 CSS3	Styling, layout, and animations
 JavaScript (Vanilla JS)	Interactivity and dynamic elements
 GitHub Pages	Hosting the live website
+
+
 📁 Folder Structure
 Coffe-Website/ │ ├── index.html │ ├── assets/ │ ├── css/ │ │ └── style.css │ ├── js/ │ │ └── script.js │ └── images/ │ └── (all coffee and gallery images) │ └── README.md
 
 yaml Copy code
+
 
 🚀 How to View
 You don’t need to install or run a local server.
@@ -32,12 +38,16 @@ Simply open the project link below:
 Or, if downloaded:
 
 Open index.html directly in your browser.
+
+
 🖼️ Screenshots
 Add screenshots from your website here (optional)
 
 ![Home Page] https://vishnupriya-art.github.io/Coffee-Website/#home
 ![Menu Section] https://vishnupriya-art.github.io/Coffee-Website/#menu
 ![Gallery] https://vishnupriya-art.github.io/Coffee-Website/#gallery
+
+
 🤝 Contributing
 If you’d like to contribute:
 
@@ -50,6 +60,7 @@ Commit your changes (git commit -m "Add feature")
 Push to your branch (git push origin feature-name)
 
 Open a Pull Request
+
 
 👤 Author
 👨‍💻 Developer: TR Vishnu Priya
